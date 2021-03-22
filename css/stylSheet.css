@@ -1,0 +1,144 @@
+
+html{
+    background-color: orange;
+    font-family: 'Orbitron', sans-serif;
+   
+}
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8rem;
+    height: 500px;
+    width: 380px;
+    display:grid;
+    border: black solid 3px;
+    grid-template-areas: "screenDisplay screenDisplay screenDisplay screenDisplay "
+                         "screenDisplay screenDisplay screenDisplay screenDisplay "
+                         "reset reset reset divisonOP"
+                         "btn7 btn8 btn9 multOp"
+                         "btn4 btn5 btn6 subOp"
+                         "btn1 btn2 btn3 addOp"
+                         "btn0 btn0 point equalOp" ;
+}
+#screenDisplay {
+    grid-area:screenDisplay;
+    background-color:transparent;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 50px;
+}
+ #screen{
+    grid-area: screen;
+    height: 50%;
+    width:100%;
+    word-break: break-all
+}                        
+#display{
+    grid-area: display;
+    height: 50%;
+    width:100%;
+    border-bottom: black 0.5px ;
+    word-break: break-all
+} 
+#trash{
+    background-color: orange;
+}
+#reset {
+    grid-area: reset;
+    background-color:  orange;
+    border-top: black solid 1px;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+}
+#reset:hover{
+    background-color: rgb(156, 104, 6);
+}
+#negative {
+    grid-area: negative;
+}
+#modulo{
+    grid-area: modulo;
+}
+#divisionOp{
+    grid-area: divisionOp;
+}
+#btn7{
+   grid-area: btn7; 
+}
+#btn8{
+    grid-area: btn8; 
+ }
+ #btn9{
+    grid-area: btn9; 
+ }
+ #mutOp{
+     grid-area: multOp;
+ }
+ #btn4{
+    grid-area: btn4; 
+ }
+ #btn5{
+    grid-area: btn5; 
+ }
+ #btn6{
+    grid-area: btn6; 
+ }
+ #subOp{
+     grid-area: subOp;
+ }
+ #btn1{
+    grid-area: btn1; 
+ }
+ #btn2{
+    grid-area: btn2; 
+ }
+ #btn3{
+    grid-area: btn3; 
+ }
+ #addOp{
+     grid-area: addOp;
+ }
+ #btn0{
+    grid-area: btn0; 
+ }
+ #point{
+     grid-area: point;
+ }
+ #equalOp{
+     grid-area: equalOp;
+ }
+.btn{
+    border: black solid 1px;
+    background-color: rgb(46, 46, 46) ;
+    color: whitesmoke;
+}
+.btn:hover{
+    background-color: darkgrey;
+
+}   
+
+.opBtn{
+    border: black 1px solid;
+    border-right: none;
+    background-color:slategray;
+}
+.opBtn:hover{
+    background-color: darkgrey;
+
+}   
+
+.eqBtn{
+    border:none;
+    background-color: slategrey;
+}
+.eqBtn:hover{
+    background-color: darkgrey;
+
+}  
+
+.credit{
+    display: flex;
+    justify-content: center;
+}
